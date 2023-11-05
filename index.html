@@ -1,123 +1,239 @@
 <!DOCTYPE html>
-<html lang= "en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-        <title>Johnny Gill</title>
-        <link rel="icon" type="image/gif" href="_images/microphone.gif">
-    </head>
-        <header class="header">
-            <div class="header-main-logo"></div>
-                <img src="_images/js_logo-thumb.png" alt="Johnny Gill logo"> 
-            
+<html lang="en">
+<head>
+    <title>Johnny Gill</title>
+    <link rel="icon" type="image/gif" href="_images/microphone.gif">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-grey.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+    body,h1 {font-family: "Montserrat", sans-serif}
+    img {margin-bottom: -7px}
+    .w3-row-padding img {margin-bottom: 12px}
+    </style>
+</head>
+<body class="w3-light-grey">
+
+<!-- SIDEBAR (Vertical Navigation Menu) -->
+ <div class="w3-container w3-black w3-sidebar w3-bar-block" style="width: auto">
+    <img src="_images/js_logo-thumb.png" alt="Johnny Gill logo" width="100">
+    <a href="index.html" class="w3-bar-item w3-button  w3-hover-deep-purple">Home</a>
+    <a href="about-us.html" class="w3-bar-item w3-button w3-hover-deep-purple">About Us</a>
+    <a href="faq.html" class="w3-bar-item w3-button  w3-hover-deep-purple">FAQs</a>
+    <a href="gallery.html" class="w3-bar-item w3-button  w3-hover-deep-purple">Gallery</a>
+    <a href="contact-us.html" class="w3-bar-item w3-button  w3-hover-deep-purple">Contact Us</a>
+    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-sign-up"></i> Sign Up</a>
+    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i> Sign In</a>
+  </div>
+
+<!-- SIDEBAR (Hamburger Menu Bar)-->
+  <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge w3-mobile" style="display:none;padding-top:150px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-bar-block w3-center">
+      <a href="index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Home</a>
+      <a href="about-us.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About Us</a>
+      <a href="faq.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">FAQs</a>
+      <a href="gallery.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Gallery</a>
+      <a href="contact-us.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact Us</a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-sign-up"></i> Sign Up</a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i> Sign In</a>
+    </div>
+  </nav>
+
+  <div style="margin-left: 25%">
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+<!-- HEADER W/TOGGLE GRID BUTTON -->
+<div class="w3-opacity">
+    <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+    <div class="w3-clear"></div>
+    <header class="w3-center w3-margin-bottom w3-mobile">
+      <h1 style="font-size: 64px;"><strong>JOHNNY GILL</strong></h1>
+      <p style="font-size: 32px;"><strong>Welcome to Johnny Gill's Fan Club</strong></p>
+      <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">R&B ARTIST</button></p>
+    </header>
+</div>   
+</div>  
+</div>
+<!-- PHOTO GRID -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px; margin-left: 200px">
+    <div class="w3-third">
+      <img src="_images/jgleatherjacket-lg.jpg" alt="LeatherJacket"  style="width:100%">
+      <img src="_images/jg_inchair-lg.jpg" alt="InChair"  style="width:100%">
+      <img src="_images/LIVEstyleEntertainment-lg.jpg" alt="LIVEstyle"  style="width:100%">
+      <img src="_images/JohhnyGillInStagePlay-lg.jpg" alt="StagePlay"  style="width:100%">
+      <img src="_images/jg_withnewedition-lg.jpg" alt="WithNE"  style="width:100%">
+      <img src="_images/jg_inrecordingsession-lg.jpg" alt="Recording"  style="width:100%">
+    </div>
+  
+    <div class="w3-third">
+      <img src="_images/handsomejg-lg.jpg" alt="Handsome"  style="width:100%">
+      <img src="_images/jgsmiling-lg.jpg" alt="Smiling"  style="width:100%">
+      <img src="_images/jgcheckthemic-lg.jpg"  alt="ChecktheMic" style="width:100%">
+      <img src="_images/jgwithbowtie-lg.jpg" alt="Bowtie"  style="width:100%">
+      <img src="_images/jginpurple-lg.jpg" alt="InPurple"  style="width:100%">
+      <img src="_images/YoungJohnnyGill-lg.jpg" alt="YoungJG"  style="width:100%">
+    </div>
+  
+    <div class="w3-third">
+      <img src="_images/nefeaturingjg-lg.jpg" alt="FeaturingJG"  style="width:100%">
+      <img src="_images/jgwithralph-lg.jpg" alt="WithRalph"  style="width:100%">
+      <img src="_images/gillandfantasia-lg.jpg" alt="Fantasia"  style="width:100%">
+      <img src="_images/jgwithothers-lg.jpg"  alt="IncOthers" style="width:100%">
+      <img src="_images/jgcasual-lg.jpg" alt="Casual"  style="width:100%">
+      <img src="_images/jg-lg.jpg"  alt="JG" style="width:100%">
+    </div>
+  </div>
+  <hr>
+<section>
+<!-- BIO -->
+<div class= "w3-light-grey w3-padding-large w3-padding-32 w3-mobile" id="bio" style="margin-bottom:128px; margin-left: 200px;
+margin-top: -100px;">
+    <h2 class="w3-center">Bio</h2>
+    <hr>
+      <p>Johnny Gill Jr is an American singer and composer. Born on May 22, 1966 in 
+      Washington D.C. to parents Annie Mae and Johnny Gill Sr. He has 3 siblings Bobby,
+      Jeff, and Randy. At the early age of 5, little Johnny's desire to perform
+      began to blossom as he sung in his father's church choir. The siblings formed a group
+      named Little Johnny and "Wings of Faith". Johnny's love for music led him to hone his 
+      gift by attending the Duke Ellington School of the Arts in Washington D.C. </p>
+      <p>
+      Johnny Gill recorded his first demo at the age of 16 which led to a recording contract 
+      with Cotillion Records, a division of Atlantic Records. In 1983, his first
+      album hit the market therefore, launching his music career as a R&B solo artist.
+      Johnny is known for his deep baritone and sexy voice that is guaranteed to make a lady weak 
+      in the knees. His most recent projects has afforded him the opportunity to change up 
+      his sound to include a new jack swing vibe. Forty-One years in the music industry and
+      Johnny Gill shows no signs of slowing down.
+      </p>
+       <cite>- Johnny Gill (1966-) by Otis Alexander. Written on January 27, 2022.</cite>
+  </div>
+</section>
+<hr>
+<section>
+<!-- AWARD-WINNING COLLABORATIONS -->
+  <div class="w3-light-grey w3-mobile" id="award-winningcollaborations" style="margin-bottom:128px; margin-left: 200px; margin-top: -100px;" >
+    <h3 class="w3-center">Award-Winning Collaborations</h3>
+    <hr>
+    <p>On January 24, 1984, Johnny Gill performed a duet with Stacy Lattisaw called "Perfect Combination".
+        In 1988 he joined the singing group, New Edition, due to Bobby Brown's desire to pursue a solo career
+        which resulted in a vacancy that Johnny Gill was elated to fill. This new union allowed Johnny the 
+        opportunity to benefit from the recording of the multi-platinum "Heart Break" album. In 1997,
+        Johnny Gill collaboration with Gerald Levert and Keith Sweat led to the formation of LSG. In 2003,
+        the group's second and final album "LSG2" was released but Unfortunately the untimely death of Gerald
+        Levert on November 10, 2006, caused the trio to disband. </p>
+        <em><strong>Johnny Gill has received two Grammy Award nominations: one with New Edition and
+            one as a solo artist.</strong></em>
+    <p>He has been nominated numerous times for various awards which include the NAACP Image Award,
+       the Soul Train Award, the American Music Award, and two Grammy Awards. Johnny Gill has also appeared
+       in a number of plays, movies, and television shows. Although the roles were minor the performances that
+       he delivered were Award-winning. Johnny Gill has composed music for himself and some other entertainers.
+    </p>
+                </div>
+</section>
+<hr>
+<article>
+    <div class="w3-card-4 w3-left w3-mobile" style="margin-bottom:128px; margin-left: 200px; float:left; width:50%; margin-top: -100px;">
+    <header class="w3-container  w3-dark grey">
+        <h6 class="w3-left-align">Perfect Combination</h6>
         </header>
-        <link rel="stylesheet" type="text/css" href="reset.css">
-        <link rel="stylesheet" type="text/css" href="style.css" >
-        <link rel="stylesheet" type="text/css" href="css/layout.css">    
-        <nav class="header-main-nav"> 
-            <a class="link" href="index.html">Home</a>|
-            <a class="visited" href="faq.html"> FAQs</a>| 
-            <a class="hover" href="#about.html">About</a>|
-            <a class="focus" href="gallery.html">Gallery</a>|
-            <a class="active" href="contact-us.html">Contact Us</a>|
-        </nav>  
-    <section>
-        <h1>Johnny Gill: A Musical Icon</h1>  
-        <h2>Welcome to Johnny Gill's Fan Club</h2>
-    </section>
-    <section>
-            <h3>Bio</h3>
-            
-            <blockquote>Johnny Gill Jr is an American singer and composer. Born on May 22, 1966 in 
-            Washington D.C. to parents Annie Mae and Johnny Gill Sr. He has 3 siblings Bobby,
-            Jeff, and Randy. At the early age of 5, little Johnny's desire to perform
-            began to blossom as he sung in his father's church choir. The siblings formed a group
-            named Little Johnny and "Wings of Faith". Johnny's love for music led him to hone his 
-            gift by attending the Duke Ellington School of the Arts in Washington D.C. </blockquote>
-            <blockquote>
-            Johnny Gill recorded his first demo at the age of 16 which led to a recording contract 
-            with Cotillion Records, a division of Atlantic Records. In 1983, his first
-            album hit the market therefore, launching his music career as a R&B solo artist.
-            Johnny is known for his deep baritone and sexy voice that is guaranteed to make a lady weak 
-            in the knees. His most recent projects has afforded him the opportunity to change up 
-            his sound to include a new jack swing vibe. Forty-One years in the music industry and
-            Johnny Gill shows no signs of slowing down.
-             </blockquote>
-             <cite>Johnny Gill (1966-) by Otis Alexander. Written on January 27, 2022.</cite>  
-            </section>
-        <article>
-            <h6>Perfect Combination</h6>
             <a target="_blank" href="_images/StacyandJohnny-lg.jpg">
                 <img src="_images/StacyandJohnny-thumb.jpg" alt="Stacy Lattisaw and Johnny Gill">
                 </a>  
                 <figure>
-                    <figcaption> Stacy Lattisaw and Johnny Gill singing their "Perfect Combination" duet</figcaption>
-                </figure>
-        </article>
-        <section>
-            <h3>Award-Winning Collaborations</h3>
-            <p>On January 24, 1984, Johnny Gill performed a duet with Stacy Lattisaw called "Perfect Combination".
-            In 1988 he joined the singing group, New Edition, due to Bobby Brown's desire to pursue a solo career
-            which resulted in a vacancy that Johnny Gill was elated to fill. This new union allowed Johnny the 
-            opportunity to benefit from the recording of the multi-platinum "Heart Break" album. In 1997,
-            Johnny Gill collaboration with Gerald Levert and Keith Sweat led to the formation of LSG. In 2003,
-            the group's second and final album "LSG2" was released but Unfortunately the untimely death of Gerald
-            Levert on November 10, 2006, caused the trio to disband. </p>
-            <em>Johnny Gill has received two Grammy Award nominations: one with New Edition and
-                one as a solo artist.</em>
-            <p>He has been nominated numerous times for various awards which include the NAACP Image Award,
-            the Soul Train Award, the American Music Award, and two Grammy Awards. Johnny Gill has also appeared
-            in a number of plays, movies, and television shows. Although the roles were minor the performances that
-            he delivered were Award-winning. Johnny Gill has composed music for himself and some other entertainers.
-            </p>
-        </section>
-        <article>
-            <h6>Let's Get the Mood Right</h6>
-            <a target="_blank" href="_images/JohnnyGillAlbumCover-lg.jpg">
-                <img src="_images/JohnnyGillAlbumCover-thumb.jpeg" alt="Johnny Gill's Let's Get the Mood Right Album">
-                </a>  
-                <figure>
-                    <figcaption> Released in 1996, this was his third and final album
-                         for Motown Records.</figcaption>
-                </figure>
-        </article>
-        <section class="music playlist">
-        <h3>Music Playlist</h3>
-        
-        <ul id="dees-ul">
-            <li>Half Crazy</li>
-            <li>My,My,My</li>
-            <li>Perfect Combination</li>
-            <li>There U Go</li>
-            <li>It Would Be You</li>
-            <li>Rub You The Right Way</li>
-            <li>Soul of a Woman</li>
-            <li>Take Me(I'm Yours)</li>
-            <li>No Stopin' Us</li>
-            <li>Fairweather Friend</li>
-            <li>In The Mood</li>
-            <li>Let's Get The Mood Right</li>
-            <li>My Body</li>
-            <li>Perfect</li>
-        </ul>
-        </section>
-        <section>
-            <h2>Hello All!</h2>
-<h3>About Me</h3>
-<blockquote>
-    My name is DeWanda and currently enrolled in a Web Design Tools class. 
-    I am in the early stages of learning how to structure and design web pages 
-    using both Hypertext and Markup Language (HTML) and Cascading Style Sheets
-    (CSS) coding elements. This semester I will gain an understanding of how to
-    master the skill of creating user-friendly and innovative websites. This 
-    knowledge will assist in achieving one personal goal which is to earn the 
-    Web Development Certificate.</blockquote>
-        </section>
-    <footer>
-        <p>Author: DeWanda Burns</p>
-        <p><a href="https://www.dallascollege.edu/JohnnyGill/index.html">DallasCollege</a></p>
-        <p><a href="mailto:Webmaster@DallasCollege.edu"> Send email</a></p>
-    </footer>
-</html>
+                    <figcaption>Stacy Lattisaw and Johnny Gill singing their "Perfect Combination" duet</figcaption>
+                </figure>   
+    </div>
+    </article>
+<article>
+<div class="w3-card-4 w3-mobile" style="margin-bottom:128px; margin-left: 200px; float:right; width:50%; margin-top: -100px;">
+<header class="w3-container  w3-dark grey">
+    <h6 class="w3-left-align">Let's Get the Mood Right</h6>
+    </header>
+        <a target="_blank" href="_images/JohnnyGillAlbumCover-lg.jpg">
+            <img src="_images/JohnnyGillAlbumCover-thumb.jpeg" alt="Johnny Gill's Let's Get the Mood Right Album">
+            </a>  
+            <figure>
+                <figcaption> Released in 1996, this was his third and final album
+                     for Motown Records.</figcaption>
+            </figure>   
+</div>
+</article>
+<section>
+<!--MUSIC PLAYLIST (Card)-->
+    <div class="w3-container">
+    <div class="w3-ul w3-card-4 w3-light-grey w3-center" style="margin-bottom:128px; margin-left: 200px; width:50%;">
+        <header class="w3-container  w3-dark grey">
+            <h2>Music Playlist</h2>
+            <h5>Johnny Gill's Top Hits</h5>
+        </header>
 
+        <ul class="w3-ul w3-card-4 w3-dark-grey w3-margin-left" style="width:fit-content"> 
+                <li>Half Crazy</li>
+                <li>My,My,My</li>
+                <li>Perfect Combination</li>
+                <li>There U Go</li>
+                <li>It Would Be You</li>
+                <li>Rub You The Right Way</li>
+                <li>Soul of a Woman</li>
+                <li>Take Me(I'm Yours)</li>
+                <li>No Stopin' Us</li>
+                <li>Fairweather Friend</li>
+                <li>In The Mood</li>
+                <li>Let's Get The Mood Right</li>
+                <li>My Body</li>
+                <li>Perfect</li>
+            </ul>
+          </div>
+        </div>
+</section>
+    
+<!-- END PAGE CONTENT -->
+
+
+<!-- FOOTER -->
+<footer class="w3-container w3-dark-grey w3-center w3-text-white w-mobile w3-padding-12" 
+style="margin-top: 100px;"> 
+   <img src="_images/facebookicon.png" alt="facebook" style="width: 25px">
+   <img src="_images/instagramicon.png" alt="instagram"  style="width: 25px">
+   <img src="_images/snapchaticon.png" alt="snapchat"  style="width: 25px">
+   <img src="_images/pinteresticon.png" alt="pinterest"  style="width: 25px">
+   <img src="_images/twittericon.png" alt="twitter"  style="width: 25px">
+   <img src="_images/linkedinicon.png" alt="linkedin"  style="width:25px">
+
+   <p>Author: DeWanda Burns</p>
+   <p><a href="https://www.dallascollege.edu/JohnnyGill/index.html">DallasCollege</a></p>
+   <p><a href="mailto:Webmaster@DallasCollege.edu"> Send email</a></p>
+ 
+ </footer>
+
+ <script>
+  // Toggle grid padding
+  function myFunction() {
+    var x = document.getElementById("myGrid");
+    if (x.className === "w3-row") {
+      x.className = "w3-row-padding";
+    } else { 
+      x.className = x.className.replace("w3-row-padding", "w3-row");
+    }
+  }
+  
+  // Open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+  }
+  
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+  </script>       
+</body>
+</html>

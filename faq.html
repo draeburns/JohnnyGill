@@ -1,83 +1,190 @@
 <!DOCTYPE html>
-<html lang= "en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-        <title>Johnny Gill</title>
-        <link rel="icon" type="image/gif" href="_images/microphone.gif">
-    </head>
-        <header class="header">
-            <div class="header-main-logo"></div>
-                <img src="_images/js_logo-thumb.png" alt="Johnny Gill logo"> 
+<html lang="en">
+<head>
+    <title>Johnny Gill</title>
+    <link rel="icon" type="image/gif" href="_images/microphone.gif">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-grey.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+    body,h1 {font-family: "Montserrat", sans-serif}
+    img {margin-bottom: -7px}
+    .w3-row-padding img {margin-bottom: 12px}
+    </style>
+</head>
+<body class="w3-light-grey">
+ <!--SIDEBAR (Vertical Navigation Menu) -->
+ <div class="w3-container w3-black w3-sidebar w3-bar-block" style="width: auto">
+    <img src="_images/js_logo-thumb.png" alt="Johnny Gill logo" width="100">
+    <a href="index.html" class="w3-bar-item w3-button  w3-hover-deep-purple">Home</a>
+    <a href="about-us.html" class="w3-bar-item w3-button w3-hover-deep-purple">About Us</a>
+    <a href="faq.html" class="w3-bar-item w3-button  w3-hover-deep-purple">FAQs</a>
+    <a href="gallery.html" class="w3-bar-item w3-button  w3-hover-deep-purple">Gallery</a>
+    <a href="contact-us.html" class="w3-bar-item w3-button  w3-hover-deep-purple">Contact Us</a>
+    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-sign-up"></i> Sign Up</a>
+    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i> Sign In</a>
+  </div>
+
+  <!-- SIDEBAR (Hamburger Menu Bar)-->
+  <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge w3-mobile" style="display:none;padding-top:150px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-bar-block w3-center">
+      <a href="index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Home</a>
+      <a href="about-us.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About Us</a>
+      <a href="faq.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">FAQs</a>
+      <a href="gallery.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Gallery</a>
+      <a href="contact-us.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact Us</a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-sign-up"></i> Sign Up</a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i> Sign In</a>
+    </div>
+  </nav>
+
+  <div style="margin-left: 25%">
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+<div class="w3-container w3-center w3-mobile w3-padding-16" style="margin-bottom: 128px;">
+    <h1 style="font-size: 64px;"><strong> FAQs</strong></h1>
+      <h2 style="font-size: 32px;"><strong>A Closer Look Behind the Man</strong></h2>
+      <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Q&A</button></p>
+          </div>
+</div>
+          <div>
+          </div>
+          <a id="Top">Top</a>
+          
+<!-- ORDERED LIST (Questions) -->
             
-        </header>
-        <link rel="stylesheet" type="text/css" href="_css/reset.css">
-        <link rel="stylesheet" type="text/css" href="_css/style.css" >
-        <link rel="stylesheet" type="text/css" href="_css/layout.css">    
-        <nav class="header-main-nav"> 
-            <a class="link" href="index.html">Home</a>|
-            <a class="visited" href="faq.html"> FAQs</a>| 
-            <a class="hover" href="#about.html">About</a>|
-            <a class="focus" href="gallery.html">Gallery</a>|
-            <a class="active" href="contact-us.html">Contact Us</a>|
-        </nav>
+               <div class="w3-container w3-light-grey" style="margin-top: -100px">
+              <button onclick="myFunction('Questions')" class="w3-btn w3-block w3-black w3-left-align ">- Questions -</button>
+              <div id="Questions" class="w3-container w3-show">
+                
+              <ol class="w3-ul w3-border w3-centered w3-light-grey">
+                
+                  <li>Who discovered Johnny Gill?</li>
+                  <li>How many godchildren does Johnny Gill have?</li>
+                  <li>In 2011, Johnny Gill played the role of a Reverend in what movie?</li>
+                  <li>What is the name of the male comedian that Johnny Gill was rumored to be romantically involved? </li>
+                  <li>Who produced Johnny Gill's hit song "My,My,My"?</li>
+                  <li>Johnny Gill's song "There U Go" appears on the soundtrack to what 1992 romantic comedy?</li>
+                  <li>Is Johnny Gill married?</li>
+                  <li>What is Johnny Gill's net worth?</li>
+              </ol>
+              </div>  
+              </div>
+  </div>
 
+<!-- IMAGE CARD -->     
+     
+    <div class="w3-card-4 w3-black w3-theme-dark" style="margin-left: 200px; width:50%; margin-top: 50px;">
+    <header class="w3-container">
+        <p>"We're all about entertaining...we just enjoy performing and 31 years of doing this...we still
+            don't take it for granted...we just go all out."</p>
+        <p class="w3-right-align">-Johnny Gill</p>
 
-        <h1>FAQs</h1>
-  <main>
-    <a id="Top">Top</a>
-        <h2>A Closer Look Behind the Man</h2>
-        <section>
-            <h3>Q&A</h3>
-            <ol>
-                <li>Who discovered Johnny Gill?</li>
-                <li>How many godchildren does Johnny Gill have?</li>
-                <li>In 2011, Johnny Gill played the role of a Reverend in what movie?</li>
-                <li>What is the name of the male comedian that Johnny Gill was rumored to be romantically involved? </li>
-                <li>Who produced Johnny Gill's hit song "My,My,My"?</li>
-                <li>Johnny Gill's song "There U Go" appears on the soundtrack to what 1992 romantic comedy?</li>
-                <li>Is Johnny Gill married?</li>
-                <li>What is Johnny Gill's net worth?</li>
-            </ol>
-        </section>
-        <article>
-            <h6>Soul of a woman</h6>
-        <p>We're all about entertaining...we just enjoy performing and 31 years of doing this...we still
-            don't take it for granted...we just go all out.</p>
-        <p>                                     -Johnny Gill</p>
+        </header> 
+            <figure class="w3-container">
+                <figcaption>This album led to the single "Soul of a Woman" becoming a
+                 No. 1 hit upon its release on September 6, 2019. 
+                 <p>Fun fact: Johnny's mother predicted this song would be "big".</p> 
+                </figcaption>
+                </figure>   
+    </div>
 
-        <a target="_blank" href="_images/johnnygillsow-lg.jpg">
-        <img src="_images/johnnygillsow-lg.jpg" alt="Johnny Gill's 'Soul of a Woman' album cover">
-        </a>
-    </article>
-        <section>
-                <h2> Find your questions answered below:</h2>
-                <dl>
-                    <dt>Who discovered Johnny Gill? </dt>
-                    <dd>Stacy Lattisaw </dd>
-                    <dt>How many godchildren does Johnny Gill have? </dt>
-                    <dd>He has 12 godchildren and 1 son named Isiah Gill </dd>
-                    <dt>In 2011, Johnny Gill played the role of a Reverend in what movie? </dt>
-                    <dd>Lord All Men Can't Be Dogs </dd>
-                    <dt>What is the name of the male comedian that Johnny Gill was rumored to be romantically involved? </dt>
-                    <dd>Eddie Murphy </dd>
-                    <dt>Who produced Johnny Gill's hit song "My,My,My"? </dt>
-                    <dd>L.A. Reid and Kenneth "Babyface" Edmonds </dd>
-                    <dt>Johnny Gill's song "There U Go" appears on the soundtrack to what 1992 romantic comedy?</dt>
-                    <dd>Boomerang </dd>
-                    <dt>Is Johnny Gill married? </dt>
-                    <dd>No, but he has been dating Carissa Rosario since 2007 </dd>
-                    <dt>What is Johnny Gill's net worth? </dt>
-                    <dd>$10 million </dd>
-                </dl>
-        </section>
-            <a href="#top"> Top</a>
-            </main>
-            <footer>
-                <p>Author: DeWanda Burns</p>
-                <p><a href="mailto:Webmaster@DallasCollege.edu"> Send email</a></p>
-            </footer>
-            </html>
+    <!-- DESCRIPTIVE LIST (Responses-Accordian)-->
+    <div class="w3-container w3-light-grey" style="margin-top: 100px; margin-left: 200px;">
+          
+        <button onclick="myFunction('Answers')" class="w3-btn w3-block w3-black w3-left-align ">- Responses -</button>
+        <div id="Answers" class="w3-container w3-show">
+          
+          <p>Find your questions answered below:</p>
+          
+          
+            
+            <dl class="w3-dl w3-border w3-centered w3-light-grey" style="margin-bottom: 100px; margin-top: 50px;">
+                  
+                      <dt>1. Who discovered Johnny Gill? </dt>
+                      <dd><strong>Answer: Stacy Lattisaw</strong></dd>
+                      <dt>2. How many godchildren does Johnny Gill have? </dt>
+                      <dd><strong> He has 12 godchildren and 1 son named Isiah Gill</strong></dd>
+                      <dt>3. In 2011, Johnny Gill played the role of a Reverend in what movie? </dt>
+                      <dd><strong>Answer: Lord All Men Can't Be Dogs</strong></dd>
+                      <dt>4. What is the name of the male comedian that Johnny Gill was rumored to be romantically involved? </dt>
+                      <dd><strong>Answer: Eddie Murphy</strong></dd>
+                      <dt>5. Who produced Johnny Gill's hit song "My,My,My"? </dt>
+                      <dd><strong>Answer: L.A. Reid and Kenneth "Babyface" Edmonds</strong></dd>
+                      <dt>6. Johnny Gill's song "There U Go" appears on the soundtrack to what 1992 romantic comedy?</dt>
+                      <dd><strong> Boomerang</strong></dd>
+                      <dt>7. Is Johnny Gill married? </dt>
+                      <dd><strong> No, but he has been dating Carissa Rosario since 2007</strong></dd>
+                      <dt>8. What is Johnny Gill's net worth? </dt>
+                      <dd><strong>Answer: $10 million</strong></dd>
+                  
+          </dl>
+          
+              <a href="#top"> Top</a>
+              
+            </div>
 
+        </div>
+        <script>
+        function myFunction(id) {
+          var x = document.getElementById(id);
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+        </script>
+<!-- FOOTER -->
+<footer class="w3-container w3-dark-grey w3-center w3-text-white w3-mobile w3-padding-12" 
+style="margin-top: 100px;"> 
+   <img src="_images/facebookicon.png" alt="facebook" style="width: 25px">
+   <img src="_images/instagramicon.png" alt="instagram"  style="width: 25px">
+   <img src="_images/snapchaticon.png" alt="snapchat"  style="width: 25px">
+   <img src="_images/pinteresticon.png" alt="pinterest"  style="width: 25px">
+   <img src="_images/twittericon.png" alt="twitter"  style="width: 25px">
+   <img src="_images/linkedinicon.png" alt="linkedin"  style="width:25px">
+
+   <p>Author: DeWanda Burns</p>
+   <p><a href="https://www.dallascollege.edu/JohnnyGill/index.html">DallasCollege</a></p>
+   <p><a href="mailto:Webmaster@DallasCollege.edu"> Send email</a></p>
+ 
+ </footer>
+
+ <script>
+  // Toggle grid padding
+  function myFunction() {
+    var x = document.getElementById("myGrid");
+    if (x.className === "w3-row") {
+      x.className = "w3-row-padding";
+    } else { 
+      x.className = x.className.replace("w3-row-padding", "w3-row");
+    }
+  }
+  
+  // Open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+  }
+  
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+  </script>
+         
+</body>
+</html>
+  
+  
+  
+  
 

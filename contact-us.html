@@ -1,131 +1,308 @@
 <!DOCTYPE html>
-<html lang= "en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-        <title>Johnny Gill</title>
-        <link rel="icon" type="image/gif" href="_images/microphone.gif">
-    </head>
-        <header class="header">
-            <div class="header-main-logo"></div>
-                <img src="_images/js_logo-thumb.png" alt="Johnny Gill logo"> 
-            
-        </header>
-        <link rel="stylesheet" type="text/css" href="_css/reset.css">
-        <link rel="stylesheet" type="text/css" href="_css/style.css" >
-        <link rel="stylesheet" type="text/css" href="_css/layout.css">    
-        <nav class="header-main-nav"> 
-            <a class="link" href="index.html">Home</a>|
-            <a class="visited" href="faq.html"> FAQs</a>| 
-            <a class="hover" href="#about.html">About</a>|
-            <a class="focus" href="gallery.html">Gallery</a>|
-            <a class="active" href="contact-us.html">Contact Us</a>|
-        </nav>
+<html lang="en">
+<head>
+    <title>Johnny Gill</title>
+    <link rel="icon" type="image/gif" href="_images/microphone.gif">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-grey.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+    body,h1 {font-family: "Montserrat", sans-serif}
+    img {margin-bottom: -7px}
+    .w3-row-padding img {margin-bottom: 12px}
+    </style>
+</head>
+<body class="w3-light-grey">
 
-        <br><br>    
- 
+<!--SIDEBAR (Vertical Navigation Menu) -->
+ <div class="w3-container w3-black w3-sidebar w3-bar-block" style="width: auto">
+    <img src="_images/js_logo-thumb.png" alt="Johnny Gill logo" width="100">
+    <a href="index.html" class="w3-bar-item w3-button  w3-hover-deep-purple">Home</a>
+    <a href="about-us.html" class="w3-bar-item w3-button w3-hover-deep-purple">About Us</a>
+    <a href="faq.html" class="w3-bar-item w3-button  w3-hover-deep-purple">FAQs</a>
+    <a href="gallery.html" class="w3-bar-item w3-button  w3-hover-deep-purple">Gallery</a>
+    <a href="contact-us.html" class="w3-bar-item w3-button  w3-hover-deep-purple">Contact Us</a>
+    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-sign-up"></i> Sign Up</a>
+    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i> Sign In</a>
+  </div>
+
+<!-- SIDEBAR (Hamburger Menu Bar) -->
+  <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge w3-mobile" style="display:none;padding-top:150px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-bar-block w3-center">
+      <a href="index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Home</a>
+      <a href="index.html/About" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+      <a href="faq.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">FAQs</a>
+      <a href="gallery.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Gallery</a>
+      <a href="contact-us.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact Us</a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-sign-up"></i> Sign Up</a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i> Sign In</a>
+    </div>
+  </nav>
+
+  <header>
+<!-- HEADER-->
+      <div style="margin-left: 25%">
+        <div class="w3-container w3-center w3-margin-top w3-padding-64"> 
+        <h1 style="font-size: 64px;"><strong>Contact Us</strong></h1>
+    </div>
+      </div>
+    </header>
+    
+<!-- !PAGE CONTENT!-->
+    <div class="w3-container w3-mobile" style="margin-left: 25%">
+    <div class="w3-content" style="max-width:1500px">
+    
+    
+<!-- FORM-->
     
 <form id="ConcertTickets"
 action="mailto:e3615896@student.dcccd.edu"
 method="post">
-<fieldset>
-    <legend>Patron</legend>
-<label for="firstname"> First Name </label>
-<br>
-<input type="text" name="firstname" id="firstname" placeholder="First Name">
-<br><br>
-<label for="lastname"> Last Name </label>
-<br>
-<input type="text" name="lastname" id="lastname" placeholder="Last Name">
-<br><br>
-<label for="email"> Email: </label>
-<br>
-<input type="email" name="email" id="email" placeholder="someone@domain.com">
-<br><br>
-<label for="special_instructions">Special Instructions </label>
-<br>
-<textarea name="special_instructions" id="special_instructions" placeholder="..."></textarea>
-<br><br>
-<label>How many tickets will you need to purchase?</label>
-<br>
-<input type="radio" name="double" id="double"  value="2">
-<label for="double">2</label>
-<input type="radio" name="triple" id="triple" value="3">
-<label for="triple">3</label>
-<input type="radio" name="quad" id="quad" value="4">
-<label for="quad">4</label>
-<br><br>
-<label>Will you need valet parking?</label>
-<br>
-<input type="checkbox" name="affirm" id="affirm" value="Yes">
-<label for="affirm">Yes</label>
-<input type="checkbox" name="decline" id="decline" value="No">
-<label for="decline">No</label>
-<br><br>
-<label for="cityorzipcode">City or Zip Code  </label>
-<br>
-<input type="text" name="cityorzipcode" id="cityorzipcode" placeholder="City or Zip Code">
-<br><br>
-<label for="date">Select a date:</label>
-<br>
-<select name="datetime" id="date">
-    <option value="No Available Dates">No Available Dates</option>
-    <option value="7:00pm, Sunday, October 8, 2023">Sunday, October 8, 2023</option>
-    <option value="8:30pm, Friday, October 13, 2023">Friday, October 13, 2023</option>
-    <option value="8:00pm, Friday, October 20, 2023">Friday, October 20, 2023</option>
-    <option value="8:00pm, Friday, October 27, 2023">Friday, October 27, 2023</option>
-</select>
-<br><br>
-<button type="submit" value="submit">Send Data</button>
-<br><br>
-<button type="reset" value="reset">Erase Data</button>
-</fieldset>
+
+    <div class="w3-container w3-theme-dark w3-mobile">
+        <h2>Concert Tickets</h2>
+    </div>
+      
+      <div class="w3-container">
+        <p>
+        <label><strong>First Name</strong></label>
+        <input class="w3-input w3-border w3-round" type="text" placeholder="First Name"></p>
+        <p>
+        <label><strong>Last Name</strong></label>
+        <input class="w3-input w3-border w3-round" type="text" placeholder="Last Name"></p>
+        <p>
+        <label><strong>Email</strong></label>
+        <input class="w3-input w3-border w3-round" type="text" placeholder="someone@domain.com"></p>
+      
+<!-- TEXTBOX -->
+    <div>
+        <label><strong>Message</strong></label>
+        <input class="w3-input w3-border w3-round" name="message" type="text" placeholder="...">
+    </div>
+<!-- RADIO BUTTONS -->
+    <label><strong>How many tickets will you need to purchase?</strong></label>
+    <input class="w3-radio" type="radio" name="quantity" value="2" checked>
+    <label>2</label>
+    
+    <input class="w3-radio" type="radio" name="quantity" value="3">
+    <label>3</label>
+    
+    <input class="w3-radio" type="radio" name="quantity" value="4">
+    <label>4</label> 
+<!-- CHECKBOXES -->
+    <div>
+    <label><strong>Will you need valet parking?</strong></label>
+    <input class="w3-check" type="checkbox" checked="checked">
+    <label>Yes</label>
+
+    <input class="w3-check" type="checkbox">
+    <label>No</label>
+    </div>
+<!-- TEXTBOX -->
+<div class="w3-row w3-section">
+    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-location-dot"></i></div>
+      <div class="w3-rest">
+        <div>
+            <label><strong>City or Zip Code</strong></label>
+            <input class="w3-input w3-border w3-round" name="message" type="text" placeholder="City or Zip Code">
+        </div> 
+      </div>
+</div>
+ 
+<!-- DROPDOWN BOX -->  
+
+    <h2><strong>Select A Date:</strong></h2>
+    <div class="w3-row w3-section">
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-calendar-days"></i></div>
+          <div class="w3-rest">
+    <select class="w3-select w3-border w3-round" name="option">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">7:00 pm, Sunday, October 08, 2023</option>
+      <option value="2">8:30 pm, Friday, October 13, 2023</option>
+      <option value="3">8:00 pm, Friday, October 20, 2023</option>
+      <option value="4">8:00 pm, Friday, October 27, 2023</option>
+      <option value="5">7:00 pm, Saturday, March 30, 2024</option>
+    </select> 
+          </div>
+    </div> 
+
+        
+<!-- BUTTONS -->
+<div>
+  
+    <button class="w3-btn w3-red">SUBMIT</button>
+
+</div>
+      </div>
+      
+
+<!-- TABLE -->
+<div class="w3-container w3-center w3-margin-top w3-padding-64 w3-mobile">
+    <h2><strong>Tour Dates</strong></h2>
+  
+    <table class="w3-table-all">
+      <thead>
+        <tr class="w3-light-grey">
+          <th>Date</th>
+          <th>Day*Time</th>
+          <th>City/State</th>
+          <th>Facility</th>
+          <th>Artists</th>
+        </tr>
+      </thead>
+      <tr> 
+        <td>OCT 08 2023</td>
+        <td>Sun*8:00pm</td>
+        <td>Toledo, OH</td>
+        <td>Huntington Center</td>
+        <td>Fantasia & Johnny Gill</td>
+      </tr>
+      <tr>
+        <td>OCT 13 2023</td>
+        <td>Fri*8:30pm</td>
+        <td>Lake Charles, LA</td>
+        <td>Golden Nugget-Lake Charles</td>
+        <td>Johnny Gill</td>
+      </tr>
+      <tr>
+        <td>OCT 20 2023</td>
+        <td>Fri*8:00pm</td>
+        <td>Atlantic City, NJ</td>
+        <td>Hard Rock Arena</td>
+        <td>Keith Sweat & Johnny Gill</td>
+      </tr>
+      <tr>
+        <td>OCT 27 2023</td>
+        <td>Fri*8:00pm</td>
+        <td>Prior Lake, MN</td>
+        <td>Mystic Lake Casino Hotel</td>
+        <td>Johnny Gill & Ralph Tresvant</td>
+      </tr>
+      <tr>
+        <td>MAR 30 2024</td>
+        <td>Sat*7:00pm</td>
+        <td>Fayetteville, NC</td>
+        <td>Crown Coliseum</td>
+        <td>Family Reunion Ole School</td>
+      </tr>
+    </table>
+  </div>
+<!-- REVIEW (CARDS)-->
+
+<div class="w3-container w3-cell-row" style="margin-top: 25px;">
+  <div class="w3-container w3-cell w3-mobile">
+    <div class="w3-row s35 w3-center"><p></p>
+        <header class="w3-container w3-card-4 w3-dark-grey">
+        <h1>Amazing!</h1>
+            </header>
+            
+            <div class="w3-container">
+              <p>Went to a few of his shows and loved each and every one 
+                 of them. My only disappointment is him not performing long 
+                 enough as I could listen to his music for hours. Patiently 
+                 awaiting for his next concert in my local area.</p>
+            </div>
+            
+            <footer class="w3-container w3-dark-grey">
+              <h5>by N.S. on 10/21/2023</h5>
+            </footer>
+             
+
+            <div class="w3-col s35 w3-center"><p></p>
+                <header class="w3-container w3-card-4 w3-dark-grey">
+                <h1>Loved It</h1>
+                    </header>
+                    
+                    <div class="w3-container">
+                      <p>I really enjoyed the concert. It was my first time 
+                        seeing Dave Hollister and Danny Boy, they were amazing. 
+                        I have seen JG many times, He is epic.</p>
+                    </div>
+                    
+                    <footer class="w3-container w3-dark-grey">
+                      <h5>by Denise Everyday on 10/11/2023</h5>
+                    </footer>
+
+                    <div class="w3-col s35 w3-center"><p></p>
+                        <header class="w3-container w3-card-4 w3-dark-grey">
+                        <h1>Spectacular</h1>
+                            </header>
+                            
+                            <div class="w3-container">
+                              <p>I really enjoyed it was very epic powerful and 
+                                 extremely exhilarating</p>
+                            </div>
+                            
+                            <footer class="w3-container w3-dark-grey">
+                              <h5>by Reo on 10/15/2023</h5>
+                            </footer>
+                    </div> 
+            </div>
+            </div>
+  </div>
+    </div>
+<!-- BECOME A MEMBER FORM-->
+       
+        <div class="w3-container w3-theme-dark w3-padding-12" style="margin-top: 100px">
+            <h2>Fan? Become a member!</h2>
+            <p>Please fill in this form to create an account</p>
+        </div>
+          
+          <div class="w3-container">
+            <p>
+            <label><strong>First Name</strong></label>
+           <input class="w3-input w3-border w3-round" type="text" placeholder="First Name"></p>
+            <p>
+            <label><strong>Last Name</strong></label>
+            <input class="w3-input w3-border w3-round" type="text" placeholder="Last Name"></p>
+            <p>
+            <label><strong>Email</strong></label>
+            <input class="w3-input w3-border w3-round" type="text" placeholder="someone@domain"></p> 
+            <label><strong>Password</strong></label>
+            <p>
+            <input class="w3-input w3-border w3-round" type="text" placeholder="Enter Password"></p>  
+            <label><strong>Repeat Password</strong></label>
+            <p>
+            <input class="w3-input w3-border w3-round" type="text" placeholder="Repeat Password"></p>   
+            <label><strong>Remember me</strong></label>
+            <input class="w3-check" type="checkbox" checked="checked">
+            <label>Yes</label>
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+            <button class="w3-btn w3-deep-orange">REGISTER</button>
+           
+          </div>
 </form>
-<table>
-    <caption>Tour Dates</caption>
-        <thead>
-        <tbody>
-        <tr>
-            <td></td>
-            <th scope="col">Date</th>
-            <th scope="col">Day*Time</th>
-            <th scope="col">City/State</th>
-            <th scope="col">Facility</th>
-            <th scope="col">Artists</th>
-        </tr>
-            <tr>
-            <td>1.</td>
-            <th scope="row">OCT 08</th>
-            <td>Sun*8:00pm</td>
-            <td>Toledo, OH</td>
-            <td>Huntington Center</td>
-            <td>Fantasia & Johnny Gill</td>
-        </tr><tr>
-            <td>2.</td>
-            <th scope="row">OCT 13</th>
-            <td>Fri*8:30pm</td>
-            <td>Lake Charles, LA</td>
-            <td>Golden Nugget-Lake Charles</td>
-            <td>Johnny Gill</td>
-        </tr><tr>
-            <td>3.</td>
-            <th scope="row">OCT 20</th>
-            <td>Fri*8:00pm</td>
-            <td>Atlantic City, NJ</td>
-            <td>Hard Rock Arena</td>
-            <td>Keith Sweat & Johnny Gill</td>
-        </tr><tr>
-            <td>4.</td>
-            <th scope="row">OCT 27</th>
-            <td>Fri*8:00pm</td>
-            <td>Prior Lake, MN</td>
-            <td>Mystic Lake Casino Hotel</td>
-            <td>Johnny Gill & Ralph Tresvant</td>
-        </tr>
-    </tbody>
-</table>
-<footer>
-    <p>Author: DeWanda Burns</p>
-    <p><a href="mailto:Webmaster@DallasCollege.edu"> Send email</a></p>
-</footer>
+
+<!-- END PAGE CONTENT -->
+          </div>
+    </div>
+        
+<!-- FOOTER -->
+<footer class="w3-container w3-dark-grey w3-center w3-text-white w3-mobile w3-padding-12" 
+style="margin-top: 100px"> 
+   <img src="_images/facebookicon.png" alt="facebook" style="width: 25px">
+   <img src="_images/instagramicon.png" alt="instagram"  style="width: 25px">
+   <img src="_images/snapchaticon.png" alt="snapchat"  style="width: 25px">
+   <img src="_images/pinteresticon.png" alt="pinterest"  style="width: 25px">
+   <img src="_images/twittericon.png" alt="twitter"  style="width: 25px">
+   <img src="_images/linkedinicon.png" alt="linkedin"  style="width:25px">
+
+   <p>Author: DeWanda Burns</p>
+   <p><a href="https://www.dallascollege.edu/JohnnyGill/index.html">DallasCollege</a></p>
+   <p><a href="mailto:Webmaster@DallasCollege.edu"> Send email</a></p>
+ 
+ </footer>
+         
+</body>
+</html>
+
+
+
